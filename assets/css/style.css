@@ -75,6 +75,7 @@ h1 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 20px;
 }
 
 nav a {
@@ -147,6 +148,10 @@ input[type=text], input[type=email] {
     border: 1px solid #dddddd;
 }
 
+#message {
+  border: 1px solid #dddddd;
+}
+
 textarea {
     height: 150px;
 }
@@ -163,8 +168,9 @@ input[type=submit] {
     position: relative;
     float: left;
     width: 300px;
-    margin: 20px 0 25px;
+    margin: 30px 0 30px;
     overflow: auto;
+    align-self: center
 }
 
 .work:nth-child(even) {
@@ -211,26 +217,46 @@ input[type=submit] {
       float: none;
       margin-left: 29%;
     }
-    /* nav a {
-      width: 100%;
-      display: inline-block
-    } */
-
+  
     .responsive {
       width: 100%;
       height: auto;
     }
 
+    #main-section {
+      width: 100%;
+      margin: none;
+    }
+
     /* Portfolio */
 
     .main-container {
-      width: 95%;
+      width: 100%;
     }
 
     /* Contact */
 
     #message {
       width: 100%;
-      border: 1px solid #4aaaa5;
+      border: 1px solid #dddddd;
     }
+}
+
+@media screen and (max-width: 768px) {
+nav {
+  margin-right: 10px;
+}
+
+.main-container {
+  width: 80%;
+}
+
+#message {
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+
+.responsive {
+  width: 40%;
+}
 }
